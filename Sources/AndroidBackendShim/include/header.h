@@ -1,3 +1,4 @@
+#if __has_include(<android/log.h>)
 #include <android/log.h>
 
 // We use this forward declaration to call the app's main function without ever
@@ -5,3 +6,4 @@
 int main(int argc, char **argv);
 
 void android_log(int priority, const char *namespace, const char *message);
+#endif
