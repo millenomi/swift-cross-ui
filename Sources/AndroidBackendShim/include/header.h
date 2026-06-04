@@ -1,4 +1,5 @@
 #if __has_include(<android/log.h>)
+#define SCUI_HAS_ANDROID_LOG_H 1
 #include <android/log.h>
 
 // We use this forward declaration to call the app's main function without ever
